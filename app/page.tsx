@@ -202,7 +202,9 @@ export default function Home() {
                       color: '#999',
                       fontSize: '12px'
                     }}>
-                      {new Date(alert.created_at).toLocaleString()}
+                      {new Date(alert.created_at).toLocaleString('en-EG', {
+                        timeZone: 'Africa/Cairo'
+                      })}
                     </small>
                     <div style={{
                       display: 'inline-block',
